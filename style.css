@@ -206,7 +206,6 @@ nav,
   margin: 0 auto;
 }
 .sponsor-logo{
-  display: flex;
   justify-content: center;
   align-items: center;
   gap: 155px;
@@ -218,7 +217,8 @@ nav,
   nav,
   .nav-container,
   .features-2,
-  .fact-box-container {
+  .fact-box-container,
+  .sponsor-logo {
     flex-direction: column;
   }
   .features {
@@ -245,12 +245,16 @@ nav,
   .fact-content {
     margin-left: 10px;
   }
-  .fact-para {
+  .fact-para,
+  .sponsor-container p {
     width: 100%;
   }
   .fact-box-container {
     align-items: center;
     gap: 20px;
+  }
+  .sponsor-logo{
+    gap: 30px;
   }
 }
 
@@ -287,5 +291,9 @@ nav,
   .fact-box-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+  .sponsor-logo{
+    flex-wrap: wrap;
+    gap: 40px;
   }
 }
